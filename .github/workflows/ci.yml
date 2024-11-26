@@ -1,11 +1,13 @@
 name: Node.js CI
  
-on: [push, pull_request]
- 
+on:
+   push: 
+       branches:
+             - develop
 jobs:
    build:
  
-     runs-on: win-ravi01
+     runs-on: ubuntu-latest
  
      steps:
      - uses: actions/checkout@v2
